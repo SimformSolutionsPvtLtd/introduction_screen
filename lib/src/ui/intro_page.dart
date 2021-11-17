@@ -66,7 +66,7 @@ class _IntroPageState extends State<IntroPage>
     return Container(
       color: widget.page.decoration.pageColor,
       decoration: widget.page.decoration.boxDecoration,
-      margin: const EdgeInsets.only(bottom: 60.0),
+      margin:  EdgeInsets.only(bottom: widget.page.decoration.boxDecoration?.image != null ? 0.0 : 60.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
